@@ -94,7 +94,8 @@ def nettacker_user_application_config():
     from core.compatible import version_info
     return {  # OWASP Nettacker Default Configuration
         "language": "en",
-        "verbose_mode": False,
+        "wizard_mode": True,
+        "verbose_mode": True,
         "verbose_event": False,
         "show_version": False,
         "report_path_filename": "{results_path}/results_{date_time}_{random_chars}.html".format(
